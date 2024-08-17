@@ -1,0 +1,21 @@
+<html>
+    <script>
+    
+        function VerificarNumeroPrimo (Numero) {
+            EsteNumeroEPrimo = true
+            for (i = 2; i < Numero; i++) {
+                if(Numero % i === 0)
+                    EsteNumeroEPrimo = false
+            }
+            return EsteNumeroEPrimo
+        }
+
+        Numero = 3
+        VerificarNumeroPrimo (Numero)
+        if (EsteNumeroEPrimo)
+            console.log ("Este numero e primo", EsteNumeroEPrimo)
+        else 
+            console.log("Este nuemro nao e primo", EsteNumeroEPrimo)
+
+    </script>
+</html>
