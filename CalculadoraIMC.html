@@ -1,0 +1,24 @@
+<html>
+    <script>
+        function CalcularIMC (Peso, Altura) {
+            IMC = Peso / (Altura ** 2)
+            if (IMC <= 18.5) {
+                console.log ("Abaixo do peso ideal", IMC)
+            } else if (IMC <= 25){
+                console.log ("Peso ideal", IMC)
+            } else if (IMC <= 30){
+                console.log ("Sobrepeso", IMC)
+            } else if (IMC <= 40){
+                console.log ("Obesidade", IMC)
+            } else {
+                console.log ("Obesidade Morbida", IMC)
+            }
+            return IMC
+        }
+
+        Peso = 70
+        Altura = 1.70
+        CalcularIMC (Peso, Altura)
+
+    </script>
+</html>
