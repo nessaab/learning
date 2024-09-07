@@ -1,0 +1,34 @@
+<html>
+    <script>
+
+        function Tempodevida () {
+        Agora = new Date()
+        AnoAtual = Agora.getFullYear ()
+        MesAtual = Agora.getMonth ()
+        DiaAtual = Agora.getDate ()
+        Idade = new Date (2021, 2, 23)
+        AnoNasc = Idade.getFullYear ()
+        MesNasc = Idade.getMonth ()
+        DiaNasc = Idade.getDate ()
+        CalculodoAno = AnoAtual - AnoNasc
+        CalculodoMes = MesAtual - MesNasc
+        CalculodoDia = DiaAtual - DiaNasc
+
+        console.log ("Ano Atual: ", AnoAtual)
+        console.log ("Mes Atual: ", MesAtual)
+        console.log ("Dia Atual: ", DiaAtual)
+        console.log ("Agora: ", Agora)
+        console.log ("A idade é: ", Idade)
+        console.log ("O ano é: ", AnoNasc)
+        console.log ("O mes é: ", MesNasc)
+        console.log ("O dia é: ", DiaNasc)
+        console.log ("Tempo de vida em anos: ", CalculodoAno)
+        console.log ("Tempo de vida em meses: ", CalculodoMes)
+        console.log ("Tempo de vida em dias: ", CalculodoDia)
+
+        }
+
+        Tempodevida ()
+
+    </script>
+</html>
