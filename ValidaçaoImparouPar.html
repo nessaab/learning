@@ -1,0 +1,34 @@
+<html>
+    <script>
+
+        function Validacao (Numero) {
+            if (isNaN(Numero)){
+                throw Error("digite apenas numeros")
+            }
+
+            EsteNumeroEPar = false
+            if (Numero % 2 === 0) 
+                EsteNumeroEPar = true
+
+            if (EsteNumeroEPar === true) 
+                console.log("Este numero é par", Numero) 
+            else
+                console.log("Este numero é impar", Numero)
+            
+            if (Numero < 0) 
+                console.log ("Este numero é negativo")
+            else 
+                console.log ("Este numero é positivo")
+            
+        }
+
+        Numero = "a" 
+        try {
+            Validacao (Numero) 
+        }
+        catch (e) {
+            alert ("deu erro: " + e.message) 
+        }
+
+    </script>
+</html>
