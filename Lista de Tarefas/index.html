@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet">
+    <title>Lista de Tarefas</title>
+
+</head>
+<body>
+    <header>
+       <h1>Lista de Tarefas</h1></header><br>
+    </header>
+
+    <div class="container"> 
+        <div class="new-task-container">
+            <div>
+
+                <input 
+                    type="text" 
+                    class="new-task-input" 
+                    placeholder="Adicione Tarefas... ">
+            
+                <button class="new-task-button">Adicionar</button>
+        
+            </div>
+
+            <div>
+                <br>
+                <span id="error" hidden style="color: red;">Digite sua tarefa antes!</span>
+            </div>
+        </div>
+        <div class="tasks-container"></div> 
+    </div>    
+
+    <script src="https://kit.fontawesome.com/fd9598a149.js" crossorigin="anonymous"></script>
+
+<script src="./scripts/script.js"></script>
+</body>
+</html>
