@@ -41,6 +41,22 @@ function listarProdutosOrdenados(){
     console.log("Produtos ordenados em ordem alfábetica", produtosOrdenados)
 }
 
+function simularCompra(listaDeCompras) {
+    // Verifique se listaDeCompras é realmente um array
+    //if (!Array.isArray(listaDeCompras)) {
+        //console.error("A lista de compras precisa ser um array.");
+       // return;
+   // }
+    const produtosDisponiveis = estoque.filter(produto => produto.includes(listaDeCompras))
+      // Verifica se encontrou algum produto disponível
+    if (produtosDisponiveis.length > 0) {
+     console.log("Produtos disponíveis para compra:")
+        console.log(produtosDisponiveis);
+   } else {
+        console.log("Nenhum produto disponível para compra.")
+   }
+}
+
 adicionarProduto("Amaciante")
 adicionarProduto("Sabao")
 adicionarProduto("Bombril")
@@ -55,3 +71,7 @@ removerProduto("Vanish")
 buscarProdutosPorTrecho("Sab")
 
 listarProdutosOrdenados ()
+
+simularCompra("Veja")
+simularCompra("Amaciante")
+simularCompra("Bom air")
